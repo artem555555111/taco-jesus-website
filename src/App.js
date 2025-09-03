@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Menu from './components/Menu';
@@ -7,13 +7,22 @@ import Reviews from './components/Reviews';
 import Events from './components/Events';
 import Contacts from './components/Contacts';
 import Footer from './components/Footer';
+import SEOHead from './components/SEOHead';
+import SchemaMarkup from './components/SchemaMarkup';
 import useLanguageSync from './hooks/useLanguageSync';
+import { registerSW } from './utils/pwaUtils';
 
 function App() {
   useLanguageSync();
   
+  useEffect(() => {
+    registerSW();
+  }, []);
+  
   return (
     <div className="App">
+      <SEOHead />
+      <SchemaMarkup />
       <Header />
       <main>
         <Hero />

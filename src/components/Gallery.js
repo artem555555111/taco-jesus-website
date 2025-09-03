@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { getImageForGalleryItem } from '../utils/galleryImageScanner';
 
 const Gallery = () => {
   const { t } = useTranslation();
@@ -11,42 +12,42 @@ const Gallery = () => {
   const galleryImages = [
     {
       id: 1,
-      src: '/assets/gallery/468728300_18252534832283507_884668673722418997_n.jpg',
+      src: getImageForGalleryItem(1),
       alt: 'Интерьер ресторана Taco Jesus',
       title: t('gallery.images.image1.title'),
       description: t('gallery.images.image1.description')
     },
     {
       id: 2,
-      src: '/assets/gallery/468737891_18252533623283507_3131229477034098169_n.jpg',
+      src: getImageForGalleryItem(2),
       alt: 'Мексиканский декор',
       title: t('gallery.images.image2.title'),
       description: t('gallery.images.image2.description')
     },
     {
       id: 3,
-      src: '/assets/gallery/468995969_18252528415283507_1307922446538666603_n.jpg',
+      src: getImageForGalleryItem(3),
       alt: 'Красивая подача блюд',
       title: t('gallery.images.image3.title'),
       description: t('gallery.images.image3.description')
     },
     {
       id: 4,
-      src: '/assets/gallery/470569866_18255082828283507_5717080829017101668_n.jpg',
+      src: getImageForGalleryItem(4),
       alt: 'Мексиканская еда',
       title: t('gallery.images.image4.title'),
       description: t('gallery.images.image4.description')
     },
     {
       id: 5,
-      src: '/assets/gallery/470800295_18255082708283507_1766542335221529329_n.jpg',
+      src: getImageForGalleryItem(5),
       alt: 'Веселая атмосфера',
       title: t('gallery.images.image5.title'),
       description: t('gallery.images.image5.description')
     },
     {
       id: 6,
-      src: '/assets/gallery/464516853_18248094199283507_5051964185044193542_n.jpg',
+      src: getImageForGalleryItem(6),
       alt: 'Новое фото ресторана',
       title: t('gallery.images.image6.title'),
       description: t('gallery.images.image6.description')
