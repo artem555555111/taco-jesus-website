@@ -7,7 +7,7 @@
       "home": "Home",
       "menu": "Menu",
       "gallery": "Gallery",
-      "reviews": "Reviews",
+
       "events": "Events",
       "contacts": "Contacts"
     }
@@ -94,33 +94,6 @@
         "title": "Happy customers",
         "description": "Our guests always leave with a smile"
       }
-    }
-  },
-  "reviews": {
-    "title": "Customer Reviews",
-    "subtitle": "Find out what our satisfied customers say about Taco Jesus",
-    "reviews": [
-      {
-        "name": "Anna Kowalska",
-        "text": "Incredibly delicious tacos! The atmosphere is simply amazing, you feel like you're in real Mexico. The staff is very friendly and the food is prepared quickly. I'll definitely come back!"
-      },
-      {
-        "name": "Michał Nowak",
-        "text": "Best burrito in Poznań! Large portions, fresh ingredients, and the taste is simply divine. I order via Glovo regularly, delivery is always fast."
-      },
-      {
-        "name": "Katarzyna Wiśniewska",
-        "text": "Great place for a family dinner! Kids are delighted with nachos, and adults enjoy authentic tacos. Reasonable prices, top quality."
-      },
-      {
-        "name": "Piotr Zawadzki",
-        "text": "Taco Jesus is not just a restaurant, it's an experience! Every dish is a work of art. I especially recommend the quesadilla with cheese sauce. Simply finger-licking good!"
-      }
-    ],
-    "stats": {
-      "average_rating": "Average rating",
-      "facebook_reviews": "Facebook reviews",
-      "satisfied_customers": "Satisfied customers"
     }
   },
   "events": {

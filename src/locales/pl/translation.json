@@ -7,7 +7,7 @@
       "home": "Strona główna",
       "menu": "Menu",
       "gallery": "Galeria",
-      "reviews": "Opinie",
+
       "events": "Wydarzenia",
       "contacts": "Kontakt"
     }
@@ -94,33 +94,6 @@
         "title": "Zadowoleni klienci",
         "description": "Nasi goście zawsze wychodzą z uśmiechem"
       }
-    }
-  },
-  "reviews": {
-    "title": "Opinie Klientów",
-    "subtitle": "Dowiedz się, co mówią nasi zadowoleni klienci o Taco Jesus",
-    "reviews": [
-      {
-        "name": "Anna Kowalska",
-        "text": "Niesamowicie smaczne tacos! Atmosfera po prostu niesamowita, czujesz się jak w prawdziwym Meksyku. Personel bardzo przyjazny, a jedzenie przygotowywane szybko. Na pewno wrócę!"
-      },
-      {
-        "name": "Michał Nowak",
-        "text": "Najlepsze burrito w Poznaniu! Porcje duże, składniki świeże, a smak po prostu boski. Zamawiam przez Glovo regularnie, dostawa zawsze szybka."
-      },
-      {
-        "name": "Katarzyna Wiśniewska",
-        "text": "Świetne miejsce na rodzinny obiad! Dzieci w zachwycie od nachos, a dorośli cieszą się autentycznymi tacos. Ceny rozsądne, jakość na najwyższym poziomie."
-      },
-      {
-        "name": "Piotr Zawadzki",
-        "text": "Taco Jesus to nie tylko restauracja, to doświadczenie! Każde danie to dzieło sztuki. Szczególnie polecam quesadillę z sosem serowym. Po prostu palce lizać!"
-      }
-    ],
-    "stats": {
-      "average_rating": "Średnia ocena",
-      "facebook_reviews": "Opinii na Facebooku",
-      "satisfied_customers": "Zadowolonych klientów"
     }
   },
   "events": {
