@@ -15,11 +15,8 @@
   "hero": {
     "title": "Taco Jesus",
     "subtitle": "Niebiańskie Tacos w Sercu Poznania",
-    "description": "Autentyczna kuchnia meksykańska z żywymi smakami i atmosferą prawdziwego Meksyku. Doświadcz prawdziwego smaku Meksyku w sercu Poznania!",
-    "cta": {
-      "menu": "Zobacz Menu",
-      "order": "Zamów przez Glovo"
-    },
+    "description": "Autentyczna kuchnia meksykańska z żywymi smakami i atmosferą prawdziwego Meksyku",
+    "cta": "Zamów przez Glovo",
     "stats": {
       "rating": "Ocena klientów",
       "customers": "Zadowolonych klientów",
