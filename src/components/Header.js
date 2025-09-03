@@ -18,11 +18,13 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { name: t('header.nav.home'), href: '#home' },
-    { name: t('header.nav.menu'), href: '#menu' },
-    { name: t('header.nav.gallery'), href: '#gallery' },
-    { name: t('header.nav.events'), href: '#events' },
-    { name: t('header.nav.contacts'), href: '#contacts' },
+    { name: 'Inicio', href: '#home' },
+    { name: 'Historia', href: '#historia' },
+    { name: 'Especialidades', href: '#especialidades' },
+    { name: 'Menú', href: '#menu' },
+    { name: 'Galería', href: '#gallery' },
+    { name: 'Eventos', href: '#events' },
+    { name: 'Contacto', href: '#contacts' },
   ];
 
   return (
