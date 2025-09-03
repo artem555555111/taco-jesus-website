@@ -1,0 +1,223 @@
+{
+  "header": {
+    "address": "Żydowska 27/1, Poznań",
+    "hours": "Mon–Sun: 12:00 – 23:00",
+    "order": "Order via Glovo",
+    "nav": {
+      "home": "Home",
+      "menu": "Menu",
+      "gallery": "Gallery",
+      "reviews": "Reviews",
+      "events": "Events",
+      "contacts": "Contacts"
+    }
+  },
+  "hero": {
+    "title": "Taco Jesus",
+    "subtitle": "Heavenly Tacos in the Heart of Poznań",
+    "description": "Authentic Mexican cuisine with vibrant flavors and the atmosphere of real Mexico",
+    "cta": "Order via Glovo",
+    "stats": {
+      "rating": "Customer rating",
+      "customers": "Happy customers",
+      "delivery": "Average delivery time"
+    }
+  },
+  "menu": {
+    "title": "Our Menu",
+    "subtitle": "Authentic Mexican dishes prepared with love and traditional recipes",
+    "categories": {
+      "all": "All",
+      "tacos": "Tacos",
+      "burritos": "Burritos",
+      "quesadillas": "Quesadillas",
+      "appetizers": "Appetizers"
+    },
+    "items": {
+      "classic_tacos": {
+        "name": "Classic Tacos",
+        "description": "Traditional Mexican tacos with beef, onion, cilantro and salsa sauce"
+      },
+      "chicken_burrito": {
+        "name": "Chicken Burrito",
+        "description": "Large burrito with chicken, rice, beans, cheese and fresh vegetables"
+      },
+      "quesadilla": {
+        "name": "Quesadilla with Cheese Sauce",
+        "description": "Crispy quesadilla with cheese, chicken and Mexican spices"
+      },
+      "nachos": {
+        "name": "Nachos with Guacamole",
+        "description": "Crispy chips with cheese, beans, guacamole and sour cream"
+      },
+      "guacamole": {
+        "name": "Homemade Guacamole",
+        "description": "Fresh avocado with tomatoes, onion, cilantro and lime"
+      },
+      "fish_tacos": {
+        "name": "Fish Tacos",
+        "description": "Fresh fish in crispy batter with cabbage and tartar sauce"
+      }
+    },
+    "popular": "Popular",
+    "prep_time": "min",
+    "order_btn": "Order",
+    "cta_title": "Ready to try our tacos?",
+    "cta_description": "Order now via Glovo and get delivery in 15 minutes!",
+    "cta_button": "Order via Glovo"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Immerse yourself in the atmosphere of real Mexico and feel the taste of authentic cuisine",
+    "images": {
+      "image1": {
+        "title": "Cozy atmosphere",
+        "description": "Warm and friendly atmosphere of our restaurant"
+      },
+      "image2": {
+        "title": "Mexican style",
+        "description": "Authentic Mexican design and decoration"
+      },
+      "image3": {
+        "title": "Art of serving",
+        "description": "Every dish is a work of culinary art"
+      },
+      "image4": {
+        "title": "Authentic flavors",
+        "description": "Real Mexican recipes and ingredients"
+      },
+      "image5": {
+        "title": "Fun and joy",
+        "description": "A place where everyone finds joy and good mood"
+      },
+      "image6": {
+        "title": "Happy customers",
+        "description": "Our guests always leave with a smile"
+      }
+    }
+  },
+  "reviews": {
+    "title": "Customer Reviews",
+    "subtitle": "Find out what our satisfied customers say about Taco Jesus",
+    "reviews": [
+      {
+        "name": "Anna Kowalska",
+        "text": "Incredibly delicious tacos! The atmosphere is simply amazing, you feel like you're in real Mexico. The staff is very friendly and the food is prepared quickly. I'll definitely come back!"
+      },
+      {
+        "name": "Michał Nowak",
+        "text": "Best burrito in Poznań! Large portions, fresh ingredients, and the taste is simply divine. I order via Glovo regularly, delivery is always fast."
+      },
+      {
+        "name": "Katarzyna Wiśniewska",
+        "text": "Great place for a family dinner! Kids are delighted with nachos, and adults enjoy authentic tacos. Reasonable prices, top quality."
+      },
+      {
+        "name": "Piotr Zawadzki",
+        "text": "Taco Jesus is not just a restaurant, it's an experience! Every dish is a work of art. I especially recommend the quesadilla with cheese sauce. Simply finger-licking good!"
+      }
+    ],
+    "stats": {
+      "average_rating": "Average rating",
+      "facebook_reviews": "Facebook reviews",
+      "satisfied_customers": "Satisfied customers"
+    }
+  },
+  "events": {
+    "title": "Events & Promotions",
+    "subtitle": "Join our fun events and don't miss out on great offers!",
+    "events": [
+      {
+        "title": "TACOWEEN",
+        "subtitle": "Halloween with Mexican accent",
+        "description": "Special menu with \"scary\" tacos, costume contests and Mexican music. 20% discount on all dishes for those who come in costume!",
+        "highlights": ["Special menu", "Costume contest", "20% discount", "Live music"]
+      },
+      {
+        "title": "Día de los Muertos",
+        "subtitle": "Day of the Dead Mexican style",
+        "description": "Traditional Mexican holiday with authentic dishes, calavera decorations and special cocktails.",
+        "highlights": ["Authentic dishes", "Calavera decorations", "Special cocktails", "Traditional music"]
+      },
+      {
+        "title": "Taco Tuesday",
+        "subtitle": "Weekly promotion",
+        "description": "Every Tuesday 30% discount on all types of tacos! Come with friends and enjoy the best tacos in Poznań.",
+        "highlights": ["Taco discount", "Weekly", "For everyone", "Fast and tasty"]
+      },
+      {
+        "title": "Mexican Fiesta",
+        "subtitle": "Mexican party",
+        "description": "Big Mexican party with live music, dancing, contests and unlimited tacos!",
+        "highlights": ["Live music", "Dancing", "Unlimited tacos", "Contests"]
+      }
+    ],
+    "popular": "Popular",
+    "free": "Free",
+    "discount": "30% discount",
+    "price": "150 zł",
+    "what_awaits": "What awaits you:",
+    "learn_more": "Learn more",
+    "follow_promotions": "Follow our promotions!",
+    "follow_description": "Subscribe to our Facebook to not miss special offers and new events",
+    "follow_facebook": "Subscribe to Facebook",
+    "order_now": "Order now"
+  },
+  "contacts": {
+    "title": "Contacts",
+    "subtitle": "Come visit us or order delivery. We're always happy to see you!",
+    "address": {
+      "title": "Address",
+      "street": "Żydowska 27/1",
+      "city": "61-001 Poznań, Poland",
+      "route": "Get directions"
+    },
+    "hours": {
+      "title": "Opening hours",
+      "schedule": "Monday - Sunday:",
+      "time": "12:00 - 23:00",
+      "note": "We work without days off!"
+    },
+    "order": {
+      "title": "Ordering methods",
+      "glovo": {
+        "title": "Order via Glovo",
+        "description": "Delivery in 15 minutes"
+      },
+      "facebook": {
+        "title": "Facebook",
+        "description": "Follow news"
+      }
+    },
+    "map": {
+      "title": "We're on the map",
+      "address": "Żydowska 27/1, Poznań",
+      "description": "In the city center, near main attractions",
+      "open_maps": "Open in Google Maps"
+    },
+    "quick_info": {
+      "title": "Quick info",
+      "parking": "Parking near the restaurant",
+      "accessibility": "Wheelchair accessible",
+      "wifi": "Wi-Fi for guests",
+      "groups": "Group orders welcome"
+    },
+    "cta": {
+      "title": "Ready to try our tacos?",
+      "description": "Order now or come visit us!",
+      "order_delivery": "Order delivery",
+      "visit_us": "Visit us"
+    }
+  },
+  "footer": {
+    "description": "Authentic Mexican cuisine in the heart of Poznań. We bring real Mexican flavors with love and traditional recipes.",
+    "quick_links": "Quick links",
+    "contact_info": "Contact",
+    "social": "We're on social media",
+    "copyright": "© 2024 Taco Jesus. All rights reserved.",
+    "made_with": "Made with",
+    "in_poznan": "in Poznań"
+  }
+}
+
+

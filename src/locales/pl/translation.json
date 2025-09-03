@@ -1,0 +1,223 @@
+{
+  "header": {
+    "address": "Żydowska 27/1, Poznań",
+    "hours": "Pn–Nd: 12:00 – 23:00",
+    "order": "Zamów przez Glovo",
+    "nav": {
+      "home": "Strona główna",
+      "menu": "Menu",
+      "gallery": "Galeria",
+      "reviews": "Opinie",
+      "events": "Wydarzenia",
+      "contacts": "Kontakt"
+    }
+  },
+  "hero": {
+    "title": "Taco Jesus",
+    "subtitle": "Niebiańskie Tacos w Sercu Poznania",
+    "description": "Autentyczna kuchnia meksykańska z żywymi smakami i atmosferą prawdziwego Meksyku",
+    "cta": "Zamów przez Glovo",
+    "stats": {
+      "rating": "Ocena klientów",
+      "customers": "Zadowolonych klientów",
+      "delivery": "Średni czas dostawy"
+    }
+  },
+  "menu": {
+    "title": "Nasze Menu",
+    "subtitle": "Autentyczne meksykańskie dania przygotowane z miłością i tradycyjnymi przepisami",
+    "categories": {
+      "all": "Wszystkie",
+      "tacos": "Tacos",
+      "burritos": "Burrito",
+      "quesadillas": "Quesadilla",
+      "appetizers": "Przystawki"
+    },
+    "items": {
+      "classic_tacos": {
+        "name": "Klasyczne Tacos",
+        "description": "Tradycyjne meksykańskie tacos z wołowiną, cebulą, kolendrą i sosem salsa"
+      },
+      "chicken_burrito": {
+        "name": "Burrito z Kurczakiem",
+        "description": "Duże burrito z kurczakiem, ryżem, fasolą, serem i świeżymi warzywami"
+      },
+      "quesadilla": {
+        "name": "Quesadilla z Sosem Serowym",
+        "description": "Chrupiąca quesadilla z serem, kurczakiem i meksykańskimi przyprawami"
+      },
+      "nachos": {
+        "name": "Nachos z Guacamole",
+        "description": "Chrupiące chipsy z serem, fasolą, guacamole i śmietaną"
+      },
+      "guacamole": {
+        "name": "Domowe Guacamole",
+        "description": "Świeże awokado z pomidorami, cebulą, kolendrą i limonką"
+      },
+      "fish_tacos": {
+        "name": "Tacos z Rybą",
+        "description": "Świeża ryba w chrupiącej panierce z kapustą i sosem tatarskim"
+      }
+    },
+    "popular": "Popularne",
+    "prep_time": "min",
+    "order_btn": "Zamów",
+    "cta_title": "Gotowy spróbować naszych tacos?",
+    "cta_description": "Zamów teraz przez Glovo i otrzymaj dostawę w 15 minut!",
+    "cta_button": "Zamów przez Glovo"
+  },
+  "gallery": {
+    "title": "Galeria",
+    "subtitle": "Zanurz się w atmosferze prawdziwego Meksyku i poczuj smak autentycznej kuchni",
+    "images": {
+      "image1": {
+        "title": "Przytulna atmosfera",
+        "description": "Ciepła i przyjazna atmosfera naszej restauracji"
+      },
+      "image2": {
+        "title": "Styl meksykański",
+        "description": "Autentyczny meksykański design i dekoracja"
+      },
+      "image3": {
+        "title": "Sztuka podawania",
+        "description": "Każde danie to dzieło sztuki kulinarnej"
+      },
+      "image4": {
+        "title": "Autentyczne smaki",
+        "description": "Prawdziwe meksykańskie przepisy i składniki"
+      },
+      "image5": {
+        "title": "Zabawa i radość",
+        "description": "Miejsce, gdzie każdy znajdzie radość i dobry nastrój"
+      },
+      "image6": {
+        "title": "Zadowoleni klienci",
+        "description": "Nasi goście zawsze wychodzą z uśmiechem"
+      }
+    }
+  },
+  "reviews": {
+    "title": "Opinie Klientów",
+    "subtitle": "Dowiedz się, co mówią nasi zadowoleni klienci o Taco Jesus",
+    "reviews": [
+      {
+        "name": "Anna Kowalska",
+        "text": "Niesamowicie smaczne tacos! Atmosfera po prostu niesamowita, czujesz się jak w prawdziwym Meksyku. Personel bardzo przyjazny, a jedzenie przygotowywane szybko. Na pewno wrócę!"
+      },
+      {
+        "name": "Michał Nowak",
+        "text": "Najlepsze burrito w Poznaniu! Porcje duże, składniki świeże, a smak po prostu boski. Zamawiam przez Glovo regularnie, dostawa zawsze szybka."
+      },
+      {
+        "name": "Katarzyna Wiśniewska",
+        "text": "Świetne miejsce na rodzinny obiad! Dzieci w zachwycie od nachos, a dorośli cieszą się autentycznymi tacos. Ceny rozsądne, jakość na najwyższym poziomie."
+      },
+      {
+        "name": "Piotr Zawadzki",
+        "text": "Taco Jesus to nie tylko restauracja, to doświadczenie! Każde danie to dzieło sztuki. Szczególnie polecam quesadillę z sosem serowym. Po prostu palce lizać!"
+      }
+    ],
+    "stats": {
+      "average_rating": "Średnia ocena",
+      "facebook_reviews": "Opinii na Facebooku",
+      "satisfied_customers": "Zadowolonych klientów"
+    }
+  },
+  "events": {
+    "title": "Wydarzenia i Promocje",
+    "subtitle": "Dołącz do naszych zabawnych wydarzeń i nie przegap korzystnych ofert!",
+    "events": [
+      {
+        "title": "TACOWEEN",
+        "subtitle": "Halloween z meksykańskim akcentem",
+        "description": "Specjalne menu z \"strasznymi\" tacos, konkursy kostiumów i meksykańska muzyka. Zniżka 20% na wszystkie dania dla tych, którzy przyjdą w kostiumie!",
+        "highlights": ["Specjalne menu", "Konkurs kostiumów", "Zniżka 20%", "Muzyka na żywo"]
+      },
+      {
+        "title": "Día de los Muertos",
+        "subtitle": "Dzień Zmarłych po meksykańsku",
+        "description": "Tradycyjne meksykańskie święto z autentycznymi daniami, dekoracjami w stylu calavera i specjalnymi koktajlami.",
+        "highlights": ["Autentyczne dania", "Dekoracje calavera", "Specjalne koktajle", "Tradycyjna muzyka"]
+      },
+      {
+        "title": "Taco Tuesday",
+        "subtitle": "Cotygodniowa promocja",
+        "description": "Każdego wtorku zniżka 30% na wszystkie rodzaje tacos! Przyjdź z przyjaciółmi i ciesz się najlepszymi tacos w Poznaniu.",
+        "highlights": ["Zniżka na tacos", "Cotygodniowo", "Dla wszystkich", "Szybko i smacznie"]
+      },
+      {
+        "title": "Mexican Fiesta",
+        "subtitle": "Meksykańska impreza",
+        "description": "Wielka meksykańska impreza z muzyką na żywo, tańcami, konkursami i nieograniczoną ilością tacos!",
+        "highlights": ["Muzyka na żywo", "Taniec", "Nieograniczone tacos", "Konkursy"]
+      }
+    ],
+    "popular": "Popularne",
+    "free": "Za darmo",
+    "discount": "Zniżka 30%",
+    "price": "150 zł",
+    "what_awaits": "Co cię czeka:",
+    "learn_more": "Dowiedz się więcej",
+    "follow_promotions": "Śledź nasze promocje!",
+    "follow_description": "Subskrybuj nasz Facebook, aby nie przegapić specjalnych ofert i nowych wydarzeń",
+    "follow_facebook": "Subskrybuj Facebook",
+    "order_now": "Zamów teraz"
+  },
+  "contacts": {
+    "title": "Kontakt",
+    "subtitle": "Przyjdź do nas w gości lub zamów dostawę. Zawsze chętnie cię widzimy!",
+    "address": {
+      "title": "Adres",
+      "street": "Żydowska 27/1",
+      "city": "61-001 Poznań, Polska",
+      "route": "Wyznacz trasę"
+    },
+    "hours": {
+      "title": "Godziny otwarcia",
+      "schedule": "Poniedziałek - Niedziela:",
+      "time": "12:00 - 23:00",
+      "note": "Pracujemy bez dni wolnych!"
+    },
+    "order": {
+      "title": "Sposoby zamówienia",
+      "glovo": {
+        "title": "Zamów przez Glovo",
+        "description": "Dostawa w 15 minut"
+      },
+      "facebook": {
+        "title": "Facebook",
+        "description": "Śledź wiadomości"
+      }
+    },
+    "map": {
+      "title": "Jesteśmy na mapie",
+      "address": "Żydowska 27/1, Poznań",
+      "description": "W centrum miasta, obok głównych atrakcji",
+      "open_maps": "Otwórz w Google Maps"
+    },
+    "quick_info": {
+      "title": "Szybka informacja",
+      "parking": "Parking obok restauracji",
+      "accessibility": "Dostępność dla wózków inwalidzkich",
+      "wifi": "Wi-Fi dla gości",
+      "groups": "Zamówienia grupowe mile widziane"
+    },
+    "cta": {
+      "title": "Gotowy spróbować naszych tacos?",
+      "description": "Zamów teraz lub przyjdź do nas w gości!",
+      "order_delivery": "Zamów dostawę",
+      "visit_us": "Przyjdź w gości"
+    }
+  },
+  "footer": {
+    "description": "Autentyczna kuchnia meksykańska w sercu Poznania. Przenosimy prawdziwe smaki Meksyku z miłością i tradycyjnymi przepisami.",
+    "quick_links": "Szybkie linki",
+    "contact_info": "Kontakt",
+    "social": "Jesteśmy w mediach społecznościowych",
+    "copyright": "© 2024 Taco Jesus. Wszystkie prawa zastrzeżone.",
+    "made_with": "Stworzone z",
+    "in_poznan": "w Poznaniu"
+  }
+}
+
+
