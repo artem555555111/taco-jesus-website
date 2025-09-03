@@ -42,18 +42,18 @@ const Events = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
           viewport={{ once: true, margin: "-50px" }}
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-12 px-4"
         >
-          <h2 className="font-lobster text-5xl md:text-6xl text-mexican-red mb-4">
+          <h2 className="font-lobster text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-mexican-red mb-3">
             {t('events.title')}
           </h2>
-          <p className="font-inter text-xl text-gray-700 max-w-3xl mx-auto">
+          <p className="font-inter text-base sm:text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
             {t('events.subtitle')}
           </p>
         </motion.div>
 
         {/* Events Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16 px-4">
           {events.map((event, index) => (
             <motion.div
               key={event.id}
@@ -73,34 +73,34 @@ const Events = () => {
               )}
 
               {/* Event image/icon */}
-              <div className="h-48 bg-gradient-to-br from-mexican-orange to-mexican-red flex items-center justify-center">
-                <div className="text-8xl opacity-80">{event.image}</div>
+              <div className="h-32 sm:h-40 lg:h-48 bg-gradient-to-br from-mexican-orange to-mexican-red flex items-center justify-center">
+                <div className="text-4xl sm:text-6xl lg:text-8xl opacity-80">{event.image}</div>
               </div>
 
               {/* Event content */}
-              <div className="p-8">
-                <div className="mb-4">
-                  <h3 className="font-lobster text-3xl text-mexican-red mb-2">
+              <div className="p-4 sm:p-6 lg:p-8">
+                <div className="mb-3 sm:mb-4">
+                  <h3 className="font-lobster text-xl sm:text-2xl lg:text-3xl text-mexican-red mb-1 sm:mb-2">
                     {event.title}
                   </h3>
-                  <p className="font-inter text-lg text-gray-600">
+                  <p className="font-inter text-sm sm:text-base lg:text-lg text-gray-600">
                     {event.subtitle}
                   </p>
                 </div>
 
                 {/* Event details */}
-                <div className="space-y-3 mb-6">
-                  <div className="flex items-center gap-3">
-                    <Calendar className="w-5 h-5 text-mexican-orange" />
-                    <span className="font-inter font-semibold">{event.date}</span>
+                <div className="space-y-2 sm:space-y-3 mb-4 sm:mb-6">
+                  <div className="flex items-center gap-2 sm:gap-3">
+                    <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-mexican-orange" />
+                    <span className="font-inter font-semibold text-sm sm:text-base">{event.date}</span>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <Clock className="w-5 h-5 text-mexican-orange" />
-                    <span className="font-inter">{event.time}</span>
+                  <div className="flex items-center gap-2 sm:gap-3">
+                    <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-mexican-orange" />
+                    <span className="font-inter text-sm sm:text-base">{event.time}</span>
                   </div>
-                  <div className="flex items-center gap-3">
-                    <Gift className="w-5 h-5 text-mexican-orange" />
-                    <span className="font-inter font-semibold text-mexican-red">{event.price}</span>
+                  <div className="flex items-center gap-2 sm:gap-3">
+                    <Gift className="w-4 h-4 sm:w-5 sm:h-5 text-mexican-orange" />
+                    <span className="font-inter font-semibold text-mexican-red text-sm sm:text-base">{event.price}</span>
                   </div>
                 </div>
 

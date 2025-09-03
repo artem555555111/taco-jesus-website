@@ -83,18 +83,18 @@ const Gallery = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, ease: "easeOut" }}
           viewport={{ once: true, margin: "-50px" }}
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-12 px-4"
         >
-          <h2 className="font-lobster text-5xl md:text-6xl text-mexican-red mb-4">
+          <h2 className="font-lobster text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-mexican-red mb-3">
             {t('gallery.title')}
           </h2>
-          <p className="font-inter text-xl text-gray-700 max-w-3xl mx-auto">
+          <p className="font-inter text-base sm:text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
             {t('gallery.subtitle')}
           </p>
         </motion.div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
           {galleryImages.map((image, index) => (
             <motion.div
               key={image.id}
@@ -102,7 +102,7 @@ const Gallery = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.3, ease: "easeOut" }}
               viewport={{ once: true, margin: "-50px" }}
-              className="relative group cursor-pointer overflow-hidden rounded-2xl shadow-lg"
+              className="relative group cursor-pointer overflow-hidden rounded-xl sm:rounded-2xl shadow-lg aspect-square"
               style={{ willChange: 'opacity, transform', transform: 'translate3d(0,0,0)' }}
               onClick={() => openModal(image, index)}
             >
