@@ -37,19 +37,22 @@ const Header = () => {
       }`}
     >
       {/* Top info bar */}
-      <div className="bg-mexican-red text-white py-2 px-4 text-sm">
-        <div className="max-w-7xl mx-auto flex flex-wrap justify-center items-center gap-4 md:gap-8">
-          <div className="flex items-center gap-2">
-            <MapPin className="w-4 h-4" />
-            <span>{t('header.address')}</span>
+      <div className="bg-mexican-red text-white py-2 px-4 text-xs sm:text-sm">
+        <div className="max-w-7xl mx-auto flex flex-wrap justify-center items-center gap-2 sm:gap-4 md:gap-8">
+          <div className="flex items-center gap-1 sm:gap-2">
+            <MapPin className="w-3 h-3 sm:w-4 sm:h-4" />
+            <span className="hidden sm:inline">{t('header.address')}</span>
+            <span className="sm:hidden">Poznań</span>
           </div>
-          <div className="flex items-center gap-2">
-            <Clock className="w-4 h-4" />
-            <span>{t('header.hours')}</span>
+          <div className="flex items-center gap-1 sm:gap-2">
+            <Clock className="w-3 h-3 sm:w-4 sm:h-4" />
+            <span className="hidden sm:inline">{t('header.hours')}</span>
+            <span className="sm:hidden">12-23</span>
           </div>
-          <div className="flex items-center gap-2">
-            <Phone className="w-4 h-4" />
-            <span>{t('header.order')}</span>
+          <div className="flex items-center gap-1 sm:gap-2">
+            <Phone className="w-3 h-3 sm:w-4 sm:h-4" />
+            <span className="hidden sm:inline">{t('header.order')}</span>
+            <span className="sm:hidden">Glovo</span>
           </div>
         </div>
       </div>
@@ -60,14 +63,14 @@ const Header = () => {
           {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="flex items-center gap-3"
+            className="flex items-center gap-2 sm:gap-3"
           >
-            <div className="text-4xl">🌮</div>
+            <div className="text-2xl sm:text-3xl md:text-4xl">🌮</div>
             <div>
-              <h1 className="font-lobster text-3xl md:text-4xl text-mexican-red">
+              <h1 className="font-lobster text-xl sm:text-2xl md:text-3xl lg:text-4xl text-mexican-red">
                 Taco Jesus
               </h1>
-              <p className="text-xs text-gray-600 font-inter">
+              <p className="text-xs text-gray-600 font-inter hidden sm:block">
                 {t('hero.subtitle')}
               </p>
             </div>
@@ -96,7 +99,7 @@ const Header = () => {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-mexican-orange hover:bg-mexican-red text-white px-6 py-2 rounded-full font-inter font-semibold transition-colors duration-200"
+              className="bg-mexican-orange hover:bg-mexican-red text-white px-4 lg:px-6 py-2 rounded-full font-inter font-semibold transition-colors duration-200 text-sm lg:text-base"
             >
               {t('header.order')}
             </motion.a>
@@ -121,25 +124,27 @@ const Header = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden mt-4 bg-white rounded-lg shadow-lg p-4"
+            className="md:hidden mt-4 bg-white rounded-lg shadow-lg p-4 mx-4"
           >
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="block py-2 text-gray-800 hover:text-mexican-red font-inter font-medium"
+                className="block py-3 text-gray-800 hover:text-mexican-red font-inter font-medium border-b border-gray-100 last:border-b-0"
               >
                 {item.name}
               </a>
             ))}
             <div className="mt-4 space-y-3">
-              <LanguageSwitcher />
+              <div className="flex justify-center">
+                <LanguageSwitcher />
+              </div>
               <a
                 href="https://glovoapp.com/pl/pl/poznan/taco-jesus-poz/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block bg-mexican-orange text-white px-6 py-2 rounded-full text-center font-inter font-semibold"
+                className="block bg-mexican-orange text-white px-6 py-3 rounded-full text-center font-inter font-semibold"
               >
                 {t('header.order')}
               </a>

@@ -27,12 +27,12 @@ const Menu = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
           viewport={{ once: true, margin: "-50px" }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16 px-4"
         >
-          <h2 className="font-lobster text-5xl md:text-6xl text-mexican-red mb-4">
+          <h2 className="font-lobster text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-mexican-red mb-4">
             {t('menu.title')}
           </h2>
-          <p className="font-inter text-xl text-gray-700 max-w-3xl mx-auto">
+          <p className="font-inter text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto">
             {t('menu.subtitle')}
           </p>
         </motion.div>
@@ -43,7 +43,7 @@ const Menu = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
           viewport={{ once: true, margin: "-50px" }}
-          className="flex flex-wrap justify-center gap-4 mb-12"
+          className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8 sm:mb-12 px-4"
         >
           {menuCategories.map((category) => (
             <motion.button
@@ -51,7 +51,7 @@ const Menu = () => {
               onClick={() => setActiveCategory(category.id)}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className={`px-6 py-3 rounded-full font-inter font-semibold transition-all duration-200 flex items-center gap-2 ${
+              className={`px-3 sm:px-6 py-2 sm:py-3 rounded-full font-inter font-semibold transition-all duration-200 flex items-center gap-1 sm:gap-2 text-sm sm:text-base ${
                 activeCategory === category.id
                   ? 'bg-mexican-red text-white shadow-lg'
                   : 'bg-white text-gray-700 hover:bg-mexican-orange hover:text-white'
@@ -64,7 +64,7 @@ const Menu = () => {
         </motion.div>
 
         {/* Menu Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 px-4">
           {filteredItems.map((item, index) => (
             <motion.div
               key={item.id}
@@ -75,40 +75,40 @@ const Menu = () => {
               className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group menu-card"
             >
               {/* Food Image */}
-                            <div className="relative h-32 w-full overflow-hidden">
+              <div className="relative h-28 sm:h-32 w-full overflow-hidden">
                 {/* Всегда пытаемся показать изображение */}
                 <img
                   src={getMenuImage(item.id)}
-                  alt={item.name}
-                  className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-300"
-                  style={{ 
-                    objectFit: 'cover', 
-                    objectPosition: 'center',
-                    width: '100%',
-                    height: '100%',
-                    minWidth: '100%',
-                    minHeight: '100%'
-                  }}
-                  onError={(e) => {
-                    console.log('Image failed to load:', e.target.src);
-                    e.target.style.display = 'none';
-                    e.target.nextSibling.style.display = 'flex';
-                  }}
-                />
+                       alt={item.name}
+                       className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-300"
+                       style={{ 
+                         objectFit: 'cover', 
+                         objectPosition: 'center',
+                         width: '100%',
+                         height: '100%',
+                         minWidth: '100%',
+                         minHeight: '100%'
+                       }}
+                       onError={(e) => {
+                         console.log('Image failed to load:', e.target.src);
+                         e.target.style.display = 'none';
+                         e.target.nextSibling.style.display = 'flex';
+                       }}
+                     />
                 {/* Fallback placeholder if image fails */}
-                <div className="w-full h-full bg-gradient-to-br from-mexican-orange/10 via-mexican-yellow/20 to-mexican-red/10 flex items-center justify-center relative hidden">
+                    <div className="w-full h-full bg-gradient-to-br from-mexican-orange/10 via-mexican-yellow/20 to-mexican-red/10 flex items-center justify-center relative hidden">
                   <div className="text-5xl mb-2 opacity-80">
-                    {item.category === 'burrito' ? '🌯' : 
-                     item.category === 'quesadilla' ? '🧀' : 
-                     item.category === 'salsy' ? '🥑' : 
-                     item.category === 'napoje' ? '🥤' : '🌮'}
-                  </div>
+                      {item.category === 'burrito' ? '🌯' : 
+                       item.category === 'quesadilla' ? '🧀' : 
+                       item.category === 'salsy' ? '🥑' : 
+                       item.category === 'napoje' ? '🥤' : '🌮'}
+                    </div>
                   <div className="absolute bottom-2 left-2 right-2 text-center">
-                    <p className="text-xs text-gray-600 font-medium bg-white/80 backdrop-blur-sm px-2 py-1 rounded-full">
-                      {item.name.split(' ').slice(0, 2).join(' ')}
-                    </p>
+                      <p className="text-xs text-gray-600 font-medium bg-white/80 backdrop-blur-sm px-2 py-1 rounded-full">
+                        {item.name.split(' ').slice(0, 2).join(' ')}
+                      </p>
+                    </div>
                   </div>
-                </div>
                 
                 {/* Popular Badge */}
                 {item.isPopular && (
@@ -124,23 +124,23 @@ const Menu = () => {
               </div>
 
               {/* Content */}
-              <div className="p-4 menu-card-content">
-                <div className="flex justify-between items-start mb-2 min-h-[3rem]">
-                  <h3 className="font-inter font-bold text-lg text-gray-800 group-hover:text-mexican-red transition-colors duration-200 leading-tight">
+              <div className="p-3 sm:p-4 menu-card-content">
+                <div className="flex justify-between items-start mb-2 min-h-[2.5rem] sm:min-h-[3rem]">
+                  <h3 className="font-inter font-bold text-base sm:text-lg text-gray-800 group-hover:text-mexican-red transition-colors duration-200 leading-tight">
                     {item.name}
                   </h3>
-                  <span className="font-lobster text-xl text-mexican-red flex-shrink-0 ml-2">
+                  <span className="font-lobster text-lg sm:text-xl text-mexican-red flex-shrink-0 ml-2">
                     {item.price}
                   </span>
                 </div>
 
-                <p className="font-inter text-gray-600 mb-3 line-clamp-2 text-sm menu-card-description">
+                <p className="font-inter text-gray-600 mb-3 line-clamp-2 text-xs sm:text-sm menu-card-description">
                   {item.description}
                 </p>
 
                 {/* Prep Time */}
-                <div className="flex items-center gap-2 text-xs text-gray-500 mb-3 h-5">
-                  <Clock className="w-4 h-4 flex-shrink-0" />
+                <div className="flex items-center gap-1 sm:gap-2 text-xs text-gray-500 mb-3 h-4 sm:h-5">
+                  <Clock className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
                   <span>{item.prepTime}</span>
                 </div>
 
@@ -151,9 +151,9 @@ const Menu = () => {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="w-full bg-gradient-to-r from-mexican-orange to-mexican-red text-white py-2 px-4 rounded-lg font-inter font-semibold hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2 group-hover:from-mexican-red group-hover:to-mexican-orange text-sm h-10 flex-shrink-0"
+                  className="w-full bg-gradient-to-r from-mexican-orange to-mexican-red text-white py-2 px-3 sm:px-4 rounded-lg font-inter font-semibold hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-1 sm:gap-2 group-hover:from-mexican-red group-hover:to-mexican-orange text-xs sm:text-sm h-8 sm:h-10 flex-shrink-0"
                 >
-                  <ShoppingCart className="w-4 h-4" />
+                  <ShoppingCart className="w-3 h-3 sm:w-4 sm:h-4" />
                   {t('menu.order_btn')}
                 </motion.a>
               </div>
