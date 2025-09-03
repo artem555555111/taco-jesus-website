@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import NuestraHistoria from './components/NuestraHistoria';
-import Especialidades from './components/Especialidades';
 import Menu from './components/Menu';
 import Gallery from './components/Gallery';
 import Events from './components/Events';
@@ -27,8 +25,6 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <NuestraHistoria />
-        <Especialidades />
         <Menu />
         <Gallery />
         <Events />
