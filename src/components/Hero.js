@@ -7,7 +7,7 @@ const Hero = () => {
   const { t } = useTranslation();
   
   return (
-    <section id="home" className="relative min-h-screen bg-gradient-to-br from-red-600 via-orange-500 to-yellow-400 overflow-hidden">
+    <section id="home" className="relative min-h-[80vh] bg-gradient-to-br from-red-600 via-orange-500 to-yellow-400 overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
@@ -16,12 +16,12 @@ const Hero = () => {
       </div>
 
       {/* Decorative Elements */}
-      <div className="absolute top-20 left-20 text-6xl opacity-20 animate-bounce">🌮</div>
-      <div className="absolute top-40 right-32 text-5xl opacity-15 animate-pulse">🌶️</div>
-      <div className="absolute bottom-32 left-32 text-4xl opacity-20 animate-bounce">🌵</div>
-      <div className="absolute bottom-20 right-20 text-5xl opacity-15 animate-pulse">☀️</div>
+      <div className="absolute top-20 left-20 text-4xl opacity-15 animate-bounce">🌮</div>
+      <div className="absolute top-40 right-32 text-3xl opacity-10 animate-pulse">🌶️</div>
+      <div className="absolute bottom-32 left-32 text-3xl opacity-15 animate-bounce">🌵</div>
+      <div className="absolute bottom-20 right-20 text-4xl opacity-10 animate-pulse">☀️</div>
 
-      <div className="relative z-10 min-h-screen flex flex-col">
+      <div className="relative z-10 min-h-[80vh] flex flex-col">
         {/* Header Section */}
         <div className="flex-1 flex items-center justify-center px-4 py-20">
           <div className="max-w-6xl mx-auto text-center">
@@ -32,10 +32,10 @@ const Hero = () => {
               transition={{ duration: 0.8 }}
               className="mb-8"
             >
-              <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-white mb-4 font-lobster">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 font-lobster">
                 TACO JESUS
               </h1>
-              <div className="text-2xl md:text-3xl lg:text-4xl text-white/90 font-inter font-light">
+              <div className="text-lg md:text-xl lg:text-2xl text-white/90 font-inter font-light">
                 {t('hero.subtitle')}
               </div>
             </motion.div>
@@ -45,9 +45,9 @@ const Hero = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.8 }}
-              className="max-w-4xl mx-auto mb-12"
+              className="max-w-3xl mx-auto mb-8"
             >
-              <p className="text-lg md:text-xl text-white/80 leading-relaxed">
+              <p className="text-base md:text-lg text-white/80 leading-relaxed">
                 {t('hero.description')}
               </p>
             </motion.div>
@@ -57,13 +57,13 @@ const Hero = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16"
+              className="flex flex-col sm:flex-row gap-3 justify-center items-center mb-12"
             >
               <motion.a
                 href="#menu"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-white text-red-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors duration-300 shadow-lg"
+                className="bg-white text-red-600 px-6 py-3 rounded-full font-bold text-base hover:bg-gray-100 transition-colors duration-300 shadow-lg"
               >
                 🍽️ {t('hero.cta.menu')}
               </motion.a>
@@ -73,7 +73,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-red-600 transition-all duration-300"
+                className="bg-transparent border-2 border-white text-white px-6 py-3 rounded-full font-bold text-base hover:bg-white hover:text-red-600 transition-all duration-300"
               >
                 🚚 {t('hero.cta.order')}
               </motion.a>
@@ -84,33 +84,33 @@ const Hero = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7, duration: 0.8 }}
-              className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto"
+              className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto"
             >
               {/* Rating */}
-              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">
-                <div className="flex items-center justify-center mb-3">
-                  <Star className="w-8 h-8 text-yellow-400 mr-2" />
-                  <span className="text-3xl font-bold text-white">4.8</span>
+              <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
+                <div className="flex items-center justify-center mb-2">
+                  <Star className="w-6 h-6 text-yellow-400 mr-2" />
+                  <span className="text-2xl font-bold text-white">4.8</span>
                 </div>
-                <p className="text-white/80 text-sm">{t('hero.stats.rating')}</p>
+                <p className="text-white/80 text-xs">{t('hero.stats.rating')}</p>
               </div>
 
               {/* Customers */}
-              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">
-                <div className="flex items-center justify-center mb-3">
-                  <Users className="w-8 h-8 text-green-400 mr-2" />
-                  <span className="text-3xl font-bold text-white">1000+</span>
+              <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
+                <div className="flex items-center justify-center mb-2">
+                  <Users className="w-6 h-6 text-green-400 mr-2" />
+                  <span className="text-2xl font-bold text-white">1000+</span>
                 </div>
-                <p className="text-white/80 text-sm">{t('hero.stats.customers')}</p>
+                <p className="text-white/80 text-xs">{t('hero.stats.customers')}</p>
               </div>
 
               {/* Delivery */}
-              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">
-                <div className="flex items-center justify-center mb-3">
-                  <Clock className="w-8 h-8 text-orange-400 mr-2" />
-                  <span className="text-3xl font-bold text-white">15 мин</span>
+              <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
+                <div className="flex items-center justify-center mb-2">
+                  <Clock className="w-6 h-6 text-orange-400 mr-2" />
+                  <span className="text-2xl font-bold text-white">15 мин</span>
                 </div>
-                <p className="text-white/80 text-sm">{t('hero.stats.delivery')}</p>
+                <p className="text-white/80 text-xs">{t('hero.stats.delivery')}</p>
               </div>
             </motion.div>
           </div>
@@ -121,34 +121,34 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.9, duration: 0.8 }}
-          className="bg-black/20 backdrop-blur-md border-t border-white/20 py-8"
+          className="bg-black/20 backdrop-blur-md border-t border-white/20 py-6"
         >
-          <div className="max-w-6xl mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+          <div className="max-w-4xl mx-auto px-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
               {/* Location */}
               <div className="flex items-center justify-center text-white">
-                <MapPin className="w-6 h-6 mr-3 text-red-400" />
+                <MapPin className="w-5 h-5 mr-2 text-red-400" />
                 <div>
-                  <div className="font-semibold">Żydowska 27/1</div>
-                  <div className="text-sm text-white/70">Poznań, Polska</div>
+                  <div className="font-semibold text-sm">Żydowska 27/1</div>
+                  <div className="text-xs text-white/70">Poznań, Polska</div>
                 </div>
               </div>
 
               {/* Phone */}
               <div className="flex items-center justify-center text-white">
-                <Phone className="w-6 h-6 mr-3 text-green-400" />
+                <Phone className="w-5 h-5 mr-2 text-green-400" />
                 <div>
-                  <div className="font-semibold">+48 123 456 789</div>
-                  <div className="text-sm text-white/70">Zamówienia</div>
+                  <div className="font-semibold text-sm">+48 123 456 789</div>
+                  <div className="text-xs text-white/70">Zamówienia</div>
                 </div>
               </div>
 
               {/* Hours */}
               <div className="flex items-center justify-center text-white">
-                <Calendar className="w-6 h-6 mr-3 text-orange-400" />
+                <Calendar className="w-5 h-5 mr-2 text-orange-400" />
                 <div>
-                  <div className="font-semibold">11:00 - 23:00</div>
-                  <div className="text-sm text-white/70">Codziennie</div>
+                  <div className="font-semibold text-sm">11:00 - 23:00</div>
+                  <div className="text-xs text-white/70">Codziennie</div>
                 </div>
               </div>
             </div>
