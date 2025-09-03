@@ -15,8 +15,11 @@
   "hero": {
     "title": "Taco Jesus",
     "subtitle": "Heavenly Tacos in the Heart of Poznań",
-    "description": "Authentic Mexican cuisine with vibrant flavors and the atmosphere of real Mexico",
-    "cta": "Order via Glovo",
+    "description": "Authentic Mexican cuisine with vibrant flavors and the atmosphere of real Mexico. Experience the true taste of Mexico in the heart of Poznań!",
+    "cta": {
+      "menu": "View Menu",
+      "order": "Order via Glovo"
+    },
     "stats": {
       "rating": "Customer rating",
       "customers": "Happy customers",
